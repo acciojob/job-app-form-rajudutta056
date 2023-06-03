@@ -1,16 +1,62 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job form</title>
+  </head>
+  <body>
+    <form action="/action.php">
+      <div>
+        <label for="name">Name*</label>
+        <input type="text" required id="name" />
+      </div>
+      <br>
 
-<html>
-
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+      <div>
+        <label for="Email"> Email*</label>
+        <input type="email" required id="Email" />
+      </div>
+      <br>
+      <div>
+        <label for="Gender"> Gender*:</label>
+        <label for="Male"> Male </label>
+        <input type="radio" required name="gender" id="Male" />
+        <label for="Female"> Female </label>
+        <input type="radio" required name="gender" id="Female" />
+      </div>
+      <br>
+      <div>
+        <label for="Laptop Brands">Laptop Brands</label>
+        <select for="Laptop Brands" id="laptop">
+          <option value="select anyone" disabled selected>
+            --Please choose an option--
+          </option>
+          <option value="Apple">Apple</option>
+          <option value="Asus">Asus</option>
+          <option value="Hp">Hp</option>
+        </select>
+      </div>
+      <br>
+      <div>
+        <label for="Age"> Age*</label>
+        <input type="number" required id="Age" />
+      </div>
+      <br>
+      <div>
+        <label for="DOB"> DOB*</label>
+        <input type="date" required id="DOB" />
+      </div>
+      <br>
+      <div>
+        <label for="Password"> Password*</label>
+        <input type="password" required id="password" maxlength="10" />
+      </div>
+      <br>
+      <div>
+        <button type="submit">submit</button>
+      </div>
+    </form>
+  </body>
 </html>
